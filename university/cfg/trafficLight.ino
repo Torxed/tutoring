@@ -21,7 +21,6 @@ void loop()
 	int lastGreen = millis()-5000;
 	int goTimer = 0;
 	int goTrigger = false;
-	int stopTrigger = false;
 	int stopDelay = millis();
 	
 	int lastCar = millis();
@@ -54,7 +53,6 @@ void loop()
 			}
 			
 			if (thisCycle - lastCar > 5000) {
-				stopTrigger = true;
 				goTrigger = false;
 				stopDelay = thisCycle;
 				state = STOP;
@@ -69,7 +67,6 @@ void loop()
 				digitalWrite(RED, HIGH);
 				digitalWrite(YELLOW, LOW);
 				digitalWrite(GREEN, LOW);
-				stopTrigger = false;
 				state = IDLE;
 			}
 
