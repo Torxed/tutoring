@@ -39,7 +39,6 @@ void loop()
 				lastCar = thisCycle;
 				
 				if (thisCycle - lastGreen > 5000) {
-					lastGreen = thisCycle;
 					goTimer = thisCycle;
 					goTrigger = true;
 					state = GO;
