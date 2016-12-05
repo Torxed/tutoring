@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<!--<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>-->
+		<link rel="stylesheet" href="./resources/css/Skeleton-2.0.4/css/normalize.css">
+		<link rel="stylesheet" href="./resources/css/font-awesome-4.7.0/css/font-awesome.min.css">
+		<!--<link rel="stylesheet" href="//raw.githubusercontent.com/nathancahill/skeleton-fontawesome-buttons/master/skeleton-fontawesome-buttons.min.css">-->
+		<link rel="stylesheet" href="./resources/css/Skeleton-2.0.4/css/skeleton.css">
+		<link rel="stylesheet" href="./resources/css/balloon.css">
+
+		<!--<link rel="stylesheet" href="./resources/css/core.css">-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="./resources/js/js.cookie.js"></script>
+
+		<meta name="viewport" content="width=device-width">
+
+		<style type="text/css">
+			body {
+				background-color: #272822;
+			}
+
+			.off {
+				margin-left: 50px;
+				background-color: #FF0000 !important;
+			}
+
+			.on {
+				background-color: #00FF00 !important;
+			}
+
+			.container {
+				top: 50%;
+				margin-top: -50px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="three columns"><br></div>
+				<div class="six columns" style="text-align: center;">
+					<form method="POST" action="/index.py">
+						<input class="on" type="submit" name="on" value="Lights on">
+						<input class="off" type="submit" name="off" value="Lights off">
+					</form>
+				</div>
+				<div class="three columns"><br></div>
+			</div>
+		</div>
+	</body>
+</html>
