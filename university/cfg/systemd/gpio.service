@@ -1,0 +1,8 @@
+[Unit]
+Description=Try to get gpio status every X seconds via timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/alarm/gpioupdate.py
+User=root
+Group=root
