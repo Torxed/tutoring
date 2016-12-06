@@ -1,0 +1,9 @@
+[Unit]
+Description=Try to get GPIO state every 3 seconds
+
+[Timer]
+OnBootSec=3sec
+OnUnitActiveSec=3sec
+
+[Install]
+WantedBy=timers.target
